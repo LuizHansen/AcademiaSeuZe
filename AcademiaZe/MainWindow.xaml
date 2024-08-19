@@ -45,6 +45,7 @@
         <Button x:Name="ButtonTreinos" Content="Treinos" FontFamily="Segoe UI Semibold" FontSize="11" Margin="1,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="9" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
         <Button x:Name="ButtonLoginLogoff" Content="Login/Logoff" FontFamily="Segoe UI Semibold" FontSize="11" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="12" Grid.Row="1" Height="23" VerticalAlignment="Top" Margin="0,12,0,0" Click="ButtonLoginLogoff_Click"/>
         <Frame x:Name="framePrincipal" Content="" Grid.ColumnSpan="14" ScrollViewer.VerticalScrollBarVisibility="Disabled" NavigationUIVisibility="Hidden" Grid.Row="2" Margin="0,2,0,0"/>
+        <Button Grid.Column="5" Content="Clique para testar a traducao&#xD;&#xA;" Grid.ColumnSpan="4" HorizontalAlignment="Left" Margin="38,122,0,0" Grid.Row="2" VerticalAlignment="Top" Height="131" Width="188" Click="Button_Click"/>
 
     </Grid>
 </Window>
