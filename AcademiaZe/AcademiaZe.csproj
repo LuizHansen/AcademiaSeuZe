@@ -14,15 +14,25 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Idioma.resx</DependentUpon>
 		</Compile>
+		<Compile Update="Properties\Idioma.espanhol-ES.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>Idioma.espanhol-ES.resx</DependentUpon>
+		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 		<EmbeddedResource Update="Properties\Idioma.en-US.resx">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 			<AccessModifier>Public</AccessModifier>
+			<Generator>PublicResXFileCodeGenerator</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Properties\Idioma.espanhol-ES.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>Idioma.espanhol-ES.Designer.cs</LastGenOutput>
 		</EmbeddedResource>
 		<EmbeddedResource Update="Properties\Idioma.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
+			<Generator>PublicResXFileCodeGenerator</Generator>
 			<LastGenOutput>Idioma.Designer.cs</LastGenOutput>
 			<AccessModifier>Public</AccessModifier>
 		</EmbeddedResource>

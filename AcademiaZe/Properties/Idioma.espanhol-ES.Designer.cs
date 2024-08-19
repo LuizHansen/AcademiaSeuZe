@@ -22,14 +22,14 @@ namespace AcademiaZe.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Idioma {
+    public class Idioma_espanhol_ES {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Idioma() {
+        internal Idioma_espanhol_ES() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace AcademiaZe.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AcademiaZe.Properties.Idioma", typeof(Idioma).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AcademiaZe.Properties.Idioma.espanhol-ES", typeof(Idioma_espanhol_ES).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
