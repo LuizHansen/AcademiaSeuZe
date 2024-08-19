@@ -1,0 +1,95 @@
+﻿<Page x:Class="AcademiaZe.PageCadastrarAvaliacao"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademiaZe"
+      mc:Ignorable="d" 
+      d:DesignHeight="381" d:DesignWidth="800"
+      Title="PageCadastrarAvaliacao">
+
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="118" Margin="12,48,0,0" VerticalAlignment="Top" Width="320" Background="White">
+            <Label Content="ID" Width="26" HorizontalAlignment="Center" Canvas.Left="6" VerticalAlignment="Top" Canvas.Top="2"/>
+            <TextBox Width="75" Background="#598C8C8C" Canvas.Left="31" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Content="ID ALUNO" Width="68" Canvas.Left="107" Canvas.Top="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox Width="75" Background="#598C8C8C" Canvas.Left="179" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Content="CPF" Width="34" Canvas.Top="35" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox Width="153" Canvas.Left="31" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Nome Aluno" Width="82" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox Width="303" Canvas.Left="7" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top" Height="15"/>
+        </Canvas>
+        <Label Content="CADASTRAR AVALIAÇÃO" FontFamily="Segoe IU Black" HorizontalAlignment="Left" Margin="9,8,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="#FFFFCC01" Background="White" Padding="10" Width="517" HorizontalAlignment="Left" VerticalAlignment="Top" Height="195" Margin="12,171,0,0">
+            <StackPanel>
+                <DatePicker HorizontalAlignment="Left"/>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Label Content="Peso(kg):" Width="58" VerticalAlignment="Center"/>
+                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                    <Label Content="Altura(cm):" Width="65"/>
+                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Label Content="Tórax:" Width="44" VerticalAlignment="Center"/>
+                    <TextBox Width="33"/>
+                    <Label Content="Cintura" Width="50"/>
+                    <TextBox Width="33"/>
+                    <Label Content="Quadril" Width="49"/>
+                    <TextBox Width="33"/>
+                    <Label Content="Antebraço dir" Width="86"/>
+                    <TextBox Width="33"/>
+                    <Label Content="Antebraço esq" Width="86"/>
+                    <TextBox Width="33"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Label Content="Bíceps dir" Width="60" VerticalAlignment="Center"/>
+                    <TextBox Width="34"/>
+                    <Label Content="Bíceps esq" Width="68"/>
+                    <TextBox Width="34"/>
+                    <Label Content="Coxa dir" Width="53"/>
+                    <TextBox Width="34"/>
+                    <Label Content="Coxa esq" Width="58"/>
+                    <TextBox Width="34"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Label Content="Panturrilha dir" Width="85" VerticalAlignment="Center"/>
+                    <TextBox Width="33"/>
+                    <Label Content="Panturrilha esq" Width="90"/>
+                    <TextBox Width="33"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal"  Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal"/>
+            </StackPanel>
+        </Border>
+        <Border BorderBrush="#FFFFCC01" Background="White" Padding="10" Width="451" HorizontalAlignment="Left" VerticalAlignment="Top" Height="97" Margin="339,48,0,0">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Label Content="Massa magra" Width="82" VerticalAlignment="Center"/>
+                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                    <Label Content="Massa gorda" Width="81"/>
+                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                    <Label Content="% Gordura" Width="69"/>
+                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Label Content="Peso Ideal" Width="65" VerticalAlignment="Center"/>
+                    <TextBox Width="33"/>
+                    <Label Content="IMC" Width="36"/>
+                    <TextBox Width="33"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal"  Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal"/>
+            </StackPanel>
+        </Border>
+        <Canvas HorizontalAlignment="Left" Height="215" Margin="542,166,0,0" VerticalAlignment="Top" Width="258">
+            <Label Content="Observações" HorizontalAlignment="Center" Canvas.Top="-4" VerticalAlignment="Top"></Label>
+            <TextBlock Height="114" Background="Gainsboro" Canvas.Left="8" TextWrapping="Wrap" Canvas.Top="22" Width="238" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button Content="SALVAR" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Height="40" Canvas.Left="127" Canvas.Top="157" Width="118" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+
+    </Grid>
+</Page>

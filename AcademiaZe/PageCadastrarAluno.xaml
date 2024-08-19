@@ -1,0 +1,75 @@
+﻿<Page x:Class="AcademiaZe.PageCadastrarAluno"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademiaZe"
+      mc:Ignorable="d" 
+      d:DesignHeight="381" d:DesignWidth="800"
+      Title="PageCadastrarAluno">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="165*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="136*"/>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="166*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="26*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Personal Information Section -->
+        <Label Content="CADASTRAR ALUNO" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="16" Foreground="#333" Margin="10,4,98,24" Grid.ColumnSpan="4" Grid.RowSpan="3"/>
+        <Label Content="ID:" FontFamily="Segoe UI Semibold" Margin="14,0,38,1" Grid.Column="1" Grid.Row="2"/>
+        <TextBox TextWrapping="Wrap" Text="" Margin="14,2,6,0" Grid.Column="1" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
+        <Label Content="CPF:" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.5,0.5" Margin="8,0,87,1" Grid.Column="2" Grid.Row="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.448"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox TextWrapping="Wrap" Text="" Margin="8,2,7,0" Grid.Column="2" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
+        <Label Content="Telefone:" Foreground="Black" FontFamily="Segoe UI Semibold" Margin="8,0,46,1" Grid.Column="3" Grid.Row="2"/>
+        <TextBox TextWrapping="Wrap" Text="" Margin="8,2,10,0" Grid.Column="3" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
+        <Label Content="Nascimento:" FontFamily="Segoe UI Semibold" Margin="10,0,0,1" HorizontalAlignment="Left" Width="80" Grid.Column="4" Grid.Row="2"/>
+        <TextBox TextWrapping="Wrap" Text="" Margin="14,3,0,0" HorizontalAlignment="Left" Width="316" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="5" Height="19" VerticalAlignment="Top"/>
+        <Label Content="Email:" FontFamily="Segoe UI Semibold" Margin="8,0,109,0" Grid.Column="4" Grid.Row="4" Height="23" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="" Margin="0,3,0,0" HorizontalAlignment="Left" Width="228" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="5" Height="19" VerticalAlignment="Top"/>
+        <DatePicker Margin="10,2,0,0" HorizontalAlignment="Left" Width="142" Grid.Column="4" Grid.Row="3" Height="23" VerticalAlignment="Top"/>
+        <Label Content="Nome:" FontFamily="Segoe UI Semibold" Margin="14,0,12,0" Grid.Column="1" Grid.Row="4" Height="27" VerticalAlignment="Center"/>
+        <local:UserControlLogradouro HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="6" Grid.Row="6"/>
+        <Label Content="Número:" FontFamily="Segoe UI Semibold" Margin="10,0,10,0" Grid.Column="1" Grid.Row="6" Grid.RowSpan="2" Height="23" VerticalAlignment="Bottom"/>
+        <TextBox TextWrapping="Wrap" Text="" Margin="15,3,0,0" HorizontalAlignment="Left" Width="56" Grid.Column="1" Grid.Row="8" Height="21" VerticalAlignment="Top"/>
+        <Label Content="Complemento:" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.5,0.5" Margin="16,0,27,0" Grid.Column="2" Grid.Row="6" Grid.RowSpan="2" Height="23" VerticalAlignment="Bottom">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.448"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox TextWrapping="Wrap" Text="" Margin="12,3,0,0" HorizontalAlignment="Left" Width="350" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="8" Height="21" VerticalAlignment="Top"/>
+        <Button Content="SALVAR" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Margin="1,5,6,2" Grid.Column="7" Grid.Row="7" Grid.RowSpan="2"/>
+
+    </Grid>
+</Page>
