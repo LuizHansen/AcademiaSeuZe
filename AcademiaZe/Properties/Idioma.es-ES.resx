@@ -121,55 +121,55 @@
     <value>Administrador</value>
   </data>
   <data name="TxtAdmissao" xml:space="preserve">
-    <value>Data de Admissão</value>
+    <value>Fecha de admisión</value>
   </data>
   <data name="TxtAlergia" xml:space="preserve">
     <value>Alergias</value>
   </data>
   <data name="TxtAltura" xml:space="preserve">
-    <value>Altura(cm):</value>
+    <value>Altura (cm):</value>
   </data>
   <data name="TxtAluno" xml:space="preserve">
-    <value>Aluno</value>
+    <value>Alumno</value>
   </data>
   <data name="TxtAnual" xml:space="preserve">
     <value>Anual</value>
   </data>
   <data name="TxtAtendente" xml:space="preserve">
-    <value>Atendente</value>
+    <value>Asistente</value>
   </data>
   <data name="TxtAulas" xml:space="preserve">
-    <value>Aulas</value>
+    <value>Clases</value>
   </data>
   <data name="TxtAvaliacao" xml:space="preserve">
-    <value>Avaliação</value>
+    <value>Evaluación</value>
   </data>
   <data name="TxtBairro" xml:space="preserve">
-    <value>Bairro:</value>
+    <value>Vecindario:</value>
   </data>
   <data name="TxtCadAluno" xml:space="preserve">
-    <value>CADASTRAR ALUNO</value>
+    <value>REGISTRAR ESTUDIANTE</value>
   </data>
   <data name="TxtCadAvaliacao" xml:space="preserve">
-    <value>CADASTRAR AVALIAÇÂO</value>
+    <value>EVALUACIÓN DEL REGISTRO</value>
   </data>
   <data name="TxtCadColaborador" xml:space="preserve">
-    <value>CADASTRAR COLABORADOR</value>
+    <value>REGISTRAR COLABORADOR</value>
   </data>
   <data name="TxtCadFrequencia" xml:space="preserve">
-    <value>CADASTRO FREQUÊNCIA</value>
+    <value>REGISTRO DE ASISTENCIA</value>
   </data>
   <data name="TxtCadLogradouro" xml:space="preserve">
-    <value>CADASTRAR LOGRADOURO</value>
+    <value>REGISTRAR LUGAR PÚBLICO</value>
   </data>
   <data name="TxtCadMatricula" xml:space="preserve">
-    <value>CADASTRAR MATRICULA</value>
+    <value>REGÍSTRESE REGISTRO</value>
   </data>
   <data name="TxtCadSenha" xml:space="preserve">
-    <value>CADASTRAR SENHA</value>
+    <value>REGISTRAR CONTRASEÑA</value>
   </data>
   <data name="TxtCidade" xml:space="preserve">
-    <value>Cidade:</value>
+    <value>Ciudad:</value>
   </data>
   <data name="TxtCintura" xml:space="preserve">
     <value>Cintura</value>
@@ -178,106 +178,106 @@
     <value>Colaborador</value>
   </data>
   <data name="TxtComplemento" xml:space="preserve">
-    <value>Complemento:</value>
+    <value>Complementar:</value>
   </data>
   <data name="TxtDAntebraco" xml:space="preserve">
-    <value>Antebraço dir</value>
+    <value>antebrazo derecho</value>
   </data>
   <data name="TxtDBiceps" xml:space="preserve">
-    <value>Bíceps dir</value>
+    <value>Bíceps derecho</value>
   </data>
   <data name="TxtDCoxa" xml:space="preserve">
-    <value>Coxa dir</value>
+    <value>muslo derecho</value>
   </data>
   <data name="TxtDiabetes" xml:space="preserve">
     <value>Diabetes</value>
   </data>
   <data name="TxtDPanturrilha" xml:space="preserve">
-    <value>Panturrilha dir</value>
+    <value>pantorrilla derecha</value>
   </data>
   <data name="TxtEAntebraco" xml:space="preserve">
-    <value>Antebraço esq</value>
+    <value>antebrazo izquierdo</value>
   </data>
   <data name="TxtEBiceps" xml:space="preserve">
-    <value>Bíceps esq</value>
+    <value>Bíceps izquierdo</value>
   </data>
   <data name="TxtECoxa" xml:space="preserve">
-    <value>Coxa esq</value>
+    <value>Muslo izquierdo</value>
   </data>
   <data name="TxtEntrada" xml:space="preserve">
-    <value>Entrada</value>
+    <value>Prohibido</value>
   </data>
   <data name="TxtEPanturrilha" xml:space="preserve">
-    <value>Panturrilha esq</value>
+    <value>pantorrilla izquierda</value>
   </data>
   <data name="TxtEstagio" xml:space="preserve">
-    <value>Estágio</value>
+    <value>Pasantía</value>
   </data>
   <data name="TxtFim" xml:space="preserve">
-    <value>Fim</value>
+    <value>Fin</value>
   </data>
   <data name="TxtFrequencia" xml:space="preserve">
-    <value>Frequencia</value>
+    <value>Frecuencia</value>
   </data>
   <data name="TxtGordura" xml:space="preserve">
-    <value>% Gordura</value>
+    <value>% Gordo</value>
   </data>
   <data name="TxtGravides" xml:space="preserve">
-    <value>Gravides</value>
+    <value>Embarazos</value>
   </data>
   <data name="TxtHome" xml:space="preserve">
-    <value>Inicio</value>
+    <value>Comenzar</value>
   </data>
   <data name="TxtIdAluno" xml:space="preserve">
-    <value>ID ALUNO</value>
+    <value>IDENTIFICACIÓN DE ESTUDIANTE</value>
   </data>
   <data name="TxtInicio" xml:space="preserve">
-    <value>Inicio</value>
+    <value>Comenzar</value>
   </data>
   <data name="TxtInstrutor" xml:space="preserve">
-    <value>Instrutor</value>
+    <value>Instructor</value>
   </data>
   <data name="TxtLabirintite" xml:space="preserve">
-    <value>Labirintite</value>
+    <value>Laberintitis</value>
   </data>
   <data name="TxtLaudo" xml:space="preserve">
-    <value>Laudo Médico</value>
+    <value>Informe médico</value>
   </data>
   <data name="TxtLesao" xml:space="preserve">
-    <value>Lessões</value>
+    <value>Lesiones</value>
   </data>
   <data name="TxtLogin" xml:space="preserve">
-    <value>Entrar</value>
+    <value>para entrar</value>
   </data>
   <data name="TxtLoginLogoff" xml:space="preserve">
-    <value>Entrar/Sair</value>
+    <value>Entrar/Salir</value>
   </data>
   <data name="TxtLogradouro" xml:space="preserve">
-    <value>Logradouro</value>
+    <value>lugar publico</value>
   </data>
   <data name="TxtMassaGorda" xml:space="preserve">
-    <value>Massa Gorda</value>
+    <value>masa grasa</value>
   </data>
   <data name="TxtMassaMagra" xml:space="preserve">
-    <value>Massa Magra</value>
+    <value>Masa magra</value>
   </data>
   <data name="TxtMatricula" xml:space="preserve">
-    <value>Matrícula</value>
+    <value>Registro</value>
   </data>
   <data name="TxtMensal" xml:space="preserve">
-    <value>Mensal</value>
+    <value>Mensual</value>
   </data>
   <data name="TxtNasciemnto" xml:space="preserve">
-    <value>Nascimento:</value>
+    <value>Nacimiento:</value>
   </data>
   <data name="TxtNenhuma" xml:space="preserve">
-    <value>Nenhuma</value>
+    <value>Ninguno</value>
   </data>
   <data name="TxtNome" xml:space="preserve">
-    <value>Nome:</value>
+    <value>Nombre:</value>
   </data>
   <data name="TxtNovaSenha" xml:space="preserve">
-    <value>Nova senha:</value>
+    <value>Nueva contraseña:</value>
   </data>
   <data name="TxtNumero" xml:space="preserve">
     <value>Número:</value>
@@ -286,67 +286,67 @@
     <value>Objetivo</value>
   </data>
   <data name="TxtObservacoes" xml:space="preserve">
-    <value>Observações</value>
+    <value>Observaciones</value>
   </data>
   <data name="TxtObsRestricoes" xml:space="preserve">
-    <value>Observações restrições</value>
+    <value>Restricciones de comentarios</value>
   </data>
   <data name="TxtOutros" xml:space="preserve">
-    <value>Outros</value>
+    <value>Otros</value>
   </data>
   <data name="TxtPais" xml:space="preserve">
     <value>País:</value>
   </data>
   <data name="TxtPeso" xml:space="preserve">
-    <value>Peso(kg):</value>
+    <value>Peso (kg):</value>
   </data>
   <data name="TxtPesoIdeal" xml:space="preserve">
-    <value>Peso ideal</value>
+    <value>peso ideal</value>
   </data>
   <data name="TxtPlano" xml:space="preserve">
-    <value>Plano</value>
+    <value>Departamento</value>
   </data>
   <data name="TxtPressaoAlta" xml:space="preserve">
-    <value>Pressão Alta</value>
+    <value>Hipertensión</value>
   </data>
   <data name="TxtProbCardiaco" xml:space="preserve">
-    <value>Problemas Cardíacos</value>
+    <value>Problemas del corazón</value>
   </data>
   <data name="TxtProbRespiratorio" xml:space="preserve">
-    <value>Problemas Respiratórios</value>
+    <value>Problemas respiratorios</value>
   </data>
   <data name="TxtQuadril" xml:space="preserve">
-    <value>Quadril</value>
+    <value>Cadera</value>
   </data>
   <data name="TxtRemedio" xml:space="preserve">
-    <value>Remédio uso continúo</value>
+    <value>Uso continuo de medicamentos.</value>
   </data>
   <data name="TxtRepitaSenha" xml:space="preserve">
-    <value>Repita a senha:</value>
+    <value>Repita la contraseña:</value>
   </data>
   <data name="TxtRestricoes" xml:space="preserve">
-    <value>Restrições</value>
+    <value>Restricciones</value>
   </data>
   <data name="TxtSaida" xml:space="preserve">
-    <value>Saída</value>
+    <value>Salida</value>
   </data>
   <data name="TxtSalvar" xml:space="preserve">
-    <value>Salvar</value>
+    <value>Ahorrar</value>
   </data>
   <data name="TxtSemestral" xml:space="preserve">
     <value>Semestral</value>
   </data>
   <data name="TxtSenha" xml:space="preserve">
-    <value>Senha</value>
+    <value>Contraseña</value>
   </data>
   <data name="TxtTelefone" xml:space="preserve">
-    <value>Telefone:</value>
+    <value>Teléfono:</value>
   </data>
   <data name="TxtTorax" xml:space="preserve">
-    <value>Toráx</value>
+    <value>Pecho</value>
   </data>
   <data name="TxtTreinos" xml:space="preserve">
-    <value>Treinos</value>
+    <value>Entrenamientos</value>
   </data>
   <data name="TxtTrimestral" xml:space="preserve">
     <value>Trimestral</value>

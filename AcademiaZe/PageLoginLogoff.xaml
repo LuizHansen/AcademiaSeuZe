@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AcademiaZe"
+      xmlns:resources="clr-namespace:AcademiaZe.Properties"
       mc:Ignorable="d" 
       d:DesignHeight="381" d:DesignWidth="800"
       Title="PageLoginLogoff">
@@ -11,7 +12,7 @@
     <Grid>
         <Border BorderThickness="3,3,3,3" BorderBrush="#FFFFCC01" Background="White" CornerRadius="10" Padding="10" Width="235" HorizontalAlignment="Center" VerticalAlignment="Top" Height="325" Margin="0,18,0,0">
             <StackPanel>
-                <Label Content="LOGIN" FontWeight="Bold" FontSize="16" Foreground="#333" HorizontalAlignment="Center"/>
+                <Label x:Name="TxtLogin" Content="{x:Static resources:Idioma.TxtLogin}" FontWeight="Bold" FontSize="16" Foreground="#333" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
                 <StackPanel Margin="0,10,0,0">
                     <Label Content="CPF" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left"/>
@@ -19,12 +20,12 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
                 <StackPanel Margin="0,10,0,0" HorizontalAlignment="Left">
-                    <Label Content="SENHA" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <Label x:Name="TxtSenha" Content="{x:Static resources:Idioma.TxtSenha}" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                     <TextBox Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
                 <StackPanel Orientation="Horizontal"  Margin="0,10,0,0"/>
-                <Button Content="SALVAR" Height="40" Width="118" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Margin="0,21,0,0" HorizontalAlignment="Center"/>
+                <Button x:Name="TxtSalvar" Content="{x:Static resources:Idioma.TxtSalvar}" Height="40" Width="118" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Margin="0,21,0,0" HorizontalAlignment="Center"/>
             </StackPanel>
         </Border>
 

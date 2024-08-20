@@ -61,101 +61,704 @@ namespace AcademiaZe.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Administrador.
+        /// </summary>
+        public static string TxtAdministrador {
+            get {
+                return ResourceManager.GetString("TxtAdministrador", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Data de Admissão.
+        /// </summary>
+        public static string TxtAdmissao {
+            get {
+                return ResourceManager.GetString("TxtAdmissao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Alergias.
+        /// </summary>
+        public static string TxtAlergia {
+            get {
+                return ResourceManager.GetString("TxtAlergia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Altura(cm):.
+        /// </summary>
+        public static string TxtAltura {
+            get {
+                return ResourceManager.GetString("TxtAltura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Aluno.
         /// </summary>
-        public static string ButtonAluno {
+        public static string TxtAluno {
             get {
-                return ResourceManager.GetString("ButtonAluno", resourceCulture);
+                return ResourceManager.GetString("TxtAluno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Anual.
+        /// </summary>
+        public static string TxtAnual {
+            get {
+                return ResourceManager.GetString("TxtAnual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Atendente.
+        /// </summary>
+        public static string TxtAtendente {
+            get {
+                return ResourceManager.GetString("TxtAtendente", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Aulas.
         /// </summary>
-        public static string ButtonAulas {
+        public static string TxtAulas {
             get {
-                return ResourceManager.GetString("ButtonAulas", resourceCulture);
+                return ResourceManager.GetString("TxtAulas", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Avaliação.
         /// </summary>
-        public static string ButtonAvaliacao {
+        public static string TxtAvaliacao {
             get {
-                return ResourceManager.GetString("ButtonAvaliacao", resourceCulture);
+                return ResourceManager.GetString("TxtAvaliacao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Bairro:.
+        /// </summary>
+        public static string TxtBairro {
+            get {
+                return ResourceManager.GetString("TxtBairro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CADASTRAR ALUNO.
+        /// </summary>
+        public static string TxtCadAluno {
+            get {
+                return ResourceManager.GetString("TxtCadAluno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CADASTRAR AVALIAÇÂO.
+        /// </summary>
+        public static string TxtCadAvaliacao {
+            get {
+                return ResourceManager.GetString("TxtCadAvaliacao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CADASTRAR COLABORADOR.
+        /// </summary>
+        public static string TxtCadColaborador {
+            get {
+                return ResourceManager.GetString("TxtCadColaborador", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CADASTRO FREQUÊNCIA.
+        /// </summary>
+        public static string TxtCadFrequencia {
+            get {
+                return ResourceManager.GetString("TxtCadFrequencia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CADASTRAR LOGRADOURO.
+        /// </summary>
+        public static string TxtCadLogradouro {
+            get {
+                return ResourceManager.GetString("TxtCadLogradouro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CADASTRAR MATRICULA.
+        /// </summary>
+        public static string TxtCadMatricula {
+            get {
+                return ResourceManager.GetString("TxtCadMatricula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CADASTRAR SENHA.
+        /// </summary>
+        public static string TxtCadSenha {
+            get {
+                return ResourceManager.GetString("TxtCadSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cidade:.
+        /// </summary>
+        public static string TxtCidade {
+            get {
+                return ResourceManager.GetString("TxtCidade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cintura.
+        /// </summary>
+        public static string TxtCintura {
+            get {
+                return ResourceManager.GetString("TxtCintura", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Colaborador.
         /// </summary>
-        public static string ButtonColaborador {
+        public static string TxtColaborador {
             get {
-                return ResourceManager.GetString("ButtonColaborador", resourceCulture);
+                return ResourceManager.GetString("TxtColaborador", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Frequência.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Complemento:.
         /// </summary>
-        public static string ButtonFrquencia {
+        public static string TxtComplemento {
             get {
-                return ResourceManager.GetString("ButtonFrquencia", resourceCulture);
+                return ResourceManager.GetString("TxtComplemento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Antebraço dir.
+        /// </summary>
+        public static string TxtDAntebraco {
+            get {
+                return ResourceManager.GetString("TxtDAntebraco", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Bíceps dir.
+        /// </summary>
+        public static string TxtDBiceps {
+            get {
+                return ResourceManager.GetString("TxtDBiceps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Coxa dir.
+        /// </summary>
+        public static string TxtDCoxa {
+            get {
+                return ResourceManager.GetString("TxtDCoxa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Diabetes.
+        /// </summary>
+        public static string TxtDiabetes {
+            get {
+                return ResourceManager.GetString("TxtDiabetes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Panturrilha dir.
+        /// </summary>
+        public static string TxtDPanturrilha {
+            get {
+                return ResourceManager.GetString("TxtDPanturrilha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Antebraço esq.
+        /// </summary>
+        public static string TxtEAntebraco {
+            get {
+                return ResourceManager.GetString("TxtEAntebraco", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Bíceps esq.
+        /// </summary>
+        public static string TxtEBiceps {
+            get {
+                return ResourceManager.GetString("TxtEBiceps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Coxa esq.
+        /// </summary>
+        public static string TxtECoxa {
+            get {
+                return ResourceManager.GetString("TxtECoxa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Entrada.
+        /// </summary>
+        public static string TxtEntrada {
+            get {
+                return ResourceManager.GetString("TxtEntrada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Panturrilha esq.
+        /// </summary>
+        public static string TxtEPanturrilha {
+            get {
+                return ResourceManager.GetString("TxtEPanturrilha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Estágio.
+        /// </summary>
+        public static string TxtEstagio {
+            get {
+                return ResourceManager.GetString("TxtEstagio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Fim.
+        /// </summary>
+        public static string TxtFim {
+            get {
+                return ResourceManager.GetString("TxtFim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Frequencia.
+        /// </summary>
+        public static string TxtFrequencia {
+            get {
+                return ResourceManager.GetString("TxtFrequencia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a % Gordura.
+        /// </summary>
+        public static string TxtGordura {
+            get {
+                return ResourceManager.GetString("TxtGordura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Gravides.
+        /// </summary>
+        public static string TxtGravides {
+            get {
+                return ResourceManager.GetString("TxtGravides", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Inicio.
         /// </summary>
-        public static string ButtonHome {
+        public static string TxtHome {
             get {
-                return ResourceManager.GetString("ButtonHome", resourceCulture);
+                return ResourceManager.GetString("TxtHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a ID ALUNO.
+        /// </summary>
+        public static string TxtIdAluno {
+            get {
+                return ResourceManager.GetString("TxtIdAluno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Inicio.
+        /// </summary>
+        public static string TxtInicio {
+            get {
+                return ResourceManager.GetString("TxtInicio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Instrutor.
+        /// </summary>
+        public static string TxtInstrutor {
+            get {
+                return ResourceManager.GetString("TxtInstrutor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Labirintite.
+        /// </summary>
+        public static string TxtLabirintite {
+            get {
+                return ResourceManager.GetString("TxtLabirintite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Laudo Médico.
+        /// </summary>
+        public static string TxtLaudo {
+            get {
+                return ResourceManager.GetString("TxtLaudo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Lessões.
+        /// </summary>
+        public static string TxtLesao {
+            get {
+                return ResourceManager.GetString("TxtLesao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Entrar.
+        /// </summary>
+        public static string TxtLogin {
+            get {
+                return ResourceManager.GetString("TxtLogin", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Entrar/Sair.
         /// </summary>
-        public static string ButtonLoginLogoff {
+        public static string TxtLoginLogoff {
             get {
-                return ResourceManager.GetString("ButtonLoginLogoff", resourceCulture);
+                return ResourceManager.GetString("TxtLoginLogoff", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Logradouro.
         /// </summary>
-        public static string ButtonLogradouro {
+        public static string TxtLogradouro {
             get {
-                return ResourceManager.GetString("ButtonLogradouro", resourceCulture);
+                return ResourceManager.GetString("TxtLogradouro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Massa Gorda.
+        /// </summary>
+        public static string TxtMassaGorda {
+            get {
+                return ResourceManager.GetString("TxtMassaGorda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Massa Magra.
+        /// </summary>
+        public static string TxtMassaMagra {
+            get {
+                return ResourceManager.GetString("TxtMassaMagra", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Matrícula.
         /// </summary>
-        public static string ButtonMatricula {
+        public static string TxtMatricula {
             get {
-                return ResourceManager.GetString("ButtonMatricula", resourceCulture);
+                return ResourceManager.GetString("TxtMatricula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Mensal.
+        /// </summary>
+        public static string TxtMensal {
+            get {
+                return ResourceManager.GetString("TxtMensal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nascimento:.
+        /// </summary>
+        public static string TxtNasciemnto {
+            get {
+                return ResourceManager.GetString("TxtNasciemnto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nenhuma.
+        /// </summary>
+        public static string TxtNenhuma {
+            get {
+                return ResourceManager.GetString("TxtNenhuma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nome:.
+        /// </summary>
+        public static string TxtNome {
+            get {
+                return ResourceManager.GetString("TxtNome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nova senha:.
+        /// </summary>
+        public static string TxtNovaSenha {
+            get {
+                return ResourceManager.GetString("TxtNovaSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Número:.
+        /// </summary>
+        public static string TxtNumero {
+            get {
+                return ResourceManager.GetString("TxtNumero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Objetivo.
+        /// </summary>
+        public static string TxtObjetivo {
+            get {
+                return ResourceManager.GetString("TxtObjetivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Observações.
+        /// </summary>
+        public static string TxtObservacoes {
+            get {
+                return ResourceManager.GetString("TxtObservacoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Observações restrições.
+        /// </summary>
+        public static string TxtObsRestricoes {
+            get {
+                return ResourceManager.GetString("TxtObsRestricoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Outros.
+        /// </summary>
+        public static string TxtOutros {
+            get {
+                return ResourceManager.GetString("TxtOutros", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a País:.
+        /// </summary>
+        public static string TxtPais {
+            get {
+                return ResourceManager.GetString("TxtPais", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Peso(kg):.
+        /// </summary>
+        public static string TxtPeso {
+            get {
+                return ResourceManager.GetString("TxtPeso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Peso ideal.
+        /// </summary>
+        public static string TxtPesoIdeal {
+            get {
+                return ResourceManager.GetString("TxtPesoIdeal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Plano.
+        /// </summary>
+        public static string TxtPlano {
+            get {
+                return ResourceManager.GetString("TxtPlano", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Pressão Alta.
+        /// </summary>
+        public static string TxtPressaoAlta {
+            get {
+                return ResourceManager.GetString("TxtPressaoAlta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Problemas Cardíacos.
+        /// </summary>
+        public static string TxtProbCardiaco {
+            get {
+                return ResourceManager.GetString("TxtProbCardiaco", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Problemas Respiratórios.
+        /// </summary>
+        public static string TxtProbRespiratorio {
+            get {
+                return ResourceManager.GetString("TxtProbRespiratorio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Quadril.
+        /// </summary>
+        public static string TxtQuadril {
+            get {
+                return ResourceManager.GetString("TxtQuadril", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Remédio uso continúo.
+        /// </summary>
+        public static string TxtRemedio {
+            get {
+                return ResourceManager.GetString("TxtRemedio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Repita a senha:.
+        /// </summary>
+        public static string TxtRepitaSenha {
+            get {
+                return ResourceManager.GetString("TxtRepitaSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Restrições.
+        /// </summary>
+        public static string TxtRestricoes {
+            get {
+                return ResourceManager.GetString("TxtRestricoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Saída.
+        /// </summary>
+        public static string TxtSaida {
+            get {
+                return ResourceManager.GetString("TxtSaida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Salvar.
+        /// </summary>
+        public static string TxtSalvar {
+            get {
+                return ResourceManager.GetString("TxtSalvar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Semestral.
+        /// </summary>
+        public static string TxtSemestral {
+            get {
+                return ResourceManager.GetString("TxtSemestral", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Senha.
         /// </summary>
-        public static string ButtonSenha {
+        public static string TxtSenha {
             get {
-                return ResourceManager.GetString("ButtonSenha", resourceCulture);
+                return ResourceManager.GetString("TxtSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Telefone:.
+        /// </summary>
+        public static string TxtTelefone {
+            get {
+                return ResourceManager.GetString("TxtTelefone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Toráx.
+        /// </summary>
+        public static string TxtTorax {
+            get {
+                return ResourceManager.GetString("TxtTorax", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Treinos.
         /// </summary>
-        public static string ButtonTreinos {
+        public static string TxtTreinos {
             get {
-                return ResourceManager.GetString("ButtonTreinos", resourceCulture);
+                return ResourceManager.GetString("TxtTreinos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Trimestral.
+        /// </summary>
+        public static string TxtTrimestral {
+            get {
+                return ResourceManager.GetString("TxtTrimestral", resourceCulture);
             }
         }
     }
