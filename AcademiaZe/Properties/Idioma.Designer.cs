@@ -59,5 +59,104 @@ namespace AcademiaZe.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Aluno.
+        /// </summary>
+        public static string ButtonAluno {
+            get {
+                return ResourceManager.GetString("ButtonAluno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Aulas.
+        /// </summary>
+        public static string ButtonAulas {
+            get {
+                return ResourceManager.GetString("ButtonAulas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Avaliação.
+        /// </summary>
+        public static string ButtonAvaliacao {
+            get {
+                return ResourceManager.GetString("ButtonAvaliacao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Colaborador.
+        /// </summary>
+        public static string ButtonColaborador {
+            get {
+                return ResourceManager.GetString("ButtonColaborador", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Frequência.
+        /// </summary>
+        public static string ButtonFrquencia {
+            get {
+                return ResourceManager.GetString("ButtonFrquencia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Inicio.
+        /// </summary>
+        public static string ButtonHome {
+            get {
+                return ResourceManager.GetString("ButtonHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Entrar/Sair.
+        /// </summary>
+        public static string ButtonLoginLogoff {
+            get {
+                return ResourceManager.GetString("ButtonLoginLogoff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Logradouro.
+        /// </summary>
+        public static string ButtonLogradouro {
+            get {
+                return ResourceManager.GetString("ButtonLogradouro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Matrícula.
+        /// </summary>
+        public static string ButtonMatricula {
+            get {
+                return ResourceManager.GetString("ButtonMatricula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Senha.
+        /// </summary>
+        public static string ButtonSenha {
+            get {
+                return ResourceManager.GetString("ButtonSenha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Treinos.
+        /// </summary>
+        public static string ButtonTreinos {
+            get {
+                return ResourceManager.GetString("ButtonTreinos", resourceCulture);
+            }
+        }
     }
 }

@@ -21,6 +21,20 @@ namespace AcademiaZe
         {
             InitializeComponent();
         }
+        private void ChangeLanguage(string cultureCode)
+        {
+            // en-US, es-ES, pt-BR
+            // Definir a cultura
+            CultureInfo culture = new CultureInfo(cultureCode);
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
+            // Recargar a interface do usuário para refletir as mudanças
+            var oldWindow = this;
+            var newWindow = new MainWindow();
+            Application.Current.MainWindow = newWindow;
+            newWindow.Show();
+            oldWindow.Close();
+        }
         private void ButtonHome_Click(object sender, RoutedEventArgs e)
         {
             if (framePrincipal.Content is not null)
@@ -89,15 +103,7 @@ namespace AcademiaZe
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            CultureInfo culture = new CultureInfo("en-US");
-
-            Thread.CurrentThread.CurrentCulture = culture;
-            Thread.CurrentThread.CurrentUICulture = culture;
-            var oldWindow = this;
-            var newWindow = new MainWindow();
-            Application.Current.MainWindow = newWindow;
-            newWindow.Show();
-            oldWindow.Close();
+            ChangeLanguage("en-US");
         }
     }
 }

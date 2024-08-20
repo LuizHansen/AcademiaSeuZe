@@ -117,7 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ButtonAluno" xml:space="preserve">
+    <value>Student</value>
+  </data>
+  <data name="ButtonAulas" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="ButtonAvaliacao" xml:space="preserve">
+    <value>Assessment</value>
+  </data>
   <data name="ButtonColaborador" xml:space="preserve">
-    <value>Testando</value>
+    <value>Collaborator</value>
+  </data>
+  <data name="ButtonFrquencia" xml:space="preserve">
+    <value>Frequency</value>
+  </data>
+  <data name="ButtonHome" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="ButtonLoginLogoff" xml:space="preserve">
+    <value>Enter/Exit</value>
+  </data>
+  <data name="ButtonLogradouro" xml:space="preserve">
+    <value>Public place</value>
+  </data>
+  <data name="ButtonMatricula" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="ButtonSenha" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ButtonTreinos" xml:space="preserve">
+    <value>Workouts</value>
   </data>
 </root>

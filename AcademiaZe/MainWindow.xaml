@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AcademiaZe"
+        xmlns:resources="clr-namespace:AcademiaZe.Properties"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -33,7 +34,7 @@
             <Label Content="SEU ZÉ" HorizontalAlignment="Left" Margin="10,-3,0,19" FontFamily="Segoe UI Black" FontSize="20"/>
         </Border>
         <Label Content="FIT CLUB" HorizontalAlignment="Left" Margin="8,19,0,0" Foreground="White" FontFamily="Segoe UI Black" FontSize="10" Grid.Column="1" Width="54" Height="23" VerticalAlignment="Top" Grid.Row="1"/>
-        <Button x:Name="ButtonHome" Content="Home" FontFamily="Segoe UI Semibold" FontSize="11" Margin="7,12,7,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="2" Click="ButtonHome_Click" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonHome" Content="{Binding Path=(resources:Idioma.ButtonHome)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="7,12,7,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="2" Click="ButtonHome_Click" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
         <Button x:Name="ButtonLogradouro" Content="Logradouro" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="10" Click="ButtonLogradouro_Click" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
         <Button x:Name="ButtonAluno" Content="Aluno" FontFamily="Segoe UI Semibold" FontSize="11" Margin="5,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="4" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonAluno_Click"/>
         <Button x:Name="ButtonColaborador" Content="Colaborador" FontFamily="Segoe UI Semibold" FontSize="11" Margin="3,12,3,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="3" Grid.Row="1" Click="ButtonColaborador_Click" Height="23" VerticalAlignment="Top"/>
@@ -45,7 +46,7 @@
         <Button x:Name="ButtonTreinos" Content="Treinos" FontFamily="Segoe UI Semibold" FontSize="11" Margin="1,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="9" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
         <Button x:Name="ButtonLoginLogoff" Content="Login/Logoff" FontFamily="Segoe UI Semibold" FontSize="11" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="12" Grid.Row="1" Height="23" VerticalAlignment="Top" Margin="0,12,0,0" Click="ButtonLoginLogoff_Click"/>
         <Frame x:Name="framePrincipal" Content="" Grid.ColumnSpan="14" ScrollViewer.VerticalScrollBarVisibility="Disabled" NavigationUIVisibility="Hidden" Grid.Row="2" Margin="0,2,0,0"/>
-        <Button Grid.Column="5" Content="Clique para testar a traducao&#xD;&#xA;" Grid.ColumnSpan="4" HorizontalAlignment="Left" Margin="38,122,0,0" Grid.Row="2" VerticalAlignment="Top" Height="131" Width="188" Click="Button_Click"/>
+        <Button Grid.Column="12" Content="Clique para testar a traducao&#xD;&#xA;" HorizontalAlignment="Left" Margin="21,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="39" Width="58" Click="Button_Click"/>
 
     </Grid>
 </Window>
