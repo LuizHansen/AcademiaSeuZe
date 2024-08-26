@@ -101,19 +101,12 @@ namespace AcademiaZe
             }
         }
 
-        private void ButtonIngles_Click(object sender, RoutedEventArgs e)
+        private void buttonConfig_Click(object sender, RoutedEventArgs e)
         {
-            ChangeLanguage("en-US");
-        }
-
-        private void ButtonEspanhol_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeLanguage("es-ES");
-        }
-
-        private void ButtonPortugues_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeLanguage("pt-BR");
+            if (framePrincipal.Content is not PageLoginLogoff)
+            {
+                framePrincipal.Content = new Configuracoes();
+            }
         }
     }
 }

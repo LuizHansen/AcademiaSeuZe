@@ -31,7 +31,7 @@
         </Grid.ColumnDefinitions>
 
         <Border BorderBrush="Black" BorderThickness="0" Background="#FFFFCC01" Height="48" VerticalAlignment="Top" Grid.ColumnSpan="14" Grid.RowSpan="2">
-            <Label Content="SEU ZÉ" HorizontalAlignment="Left" Margin="10,-3,0,19" FontFamily="Segoe UI Black" FontSize="20"/>
+            <Button x:Name="buttonConfig" Content="Config" Margin="766,12,0,12" Click="buttonConfig_Click"/>
         </Border>
         <Label Content="FIT CLUB" HorizontalAlignment="Left" Margin="8,19,0,0" Foreground="White" FontFamily="Segoe UI Black" FontSize="10" Grid.Column="1" Width="54" Height="23" VerticalAlignment="Top" Grid.Row="1"/>
         <Button x:Name="TxtHome" Content="{Binding Path=(resources:Idioma.TxtHome)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="7,12,7,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="2" Click="ButtonHome_Click" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
@@ -46,9 +46,6 @@
         <Button x:Name="TxtTreinos" Content="{Binding Path=(resources:Idioma.TxtTreinos)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="1,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="9" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
         <Button x:Name="TxtLoginLogoff" Content="{Binding Path=(resources:Idioma.TxtLoginLogoff)}" FontFamily="Segoe UI Semibold" FontSize="11" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="12" Grid.Row="1" Height="23" VerticalAlignment="Top" Margin="0,12,0,0" Click="ButtonLoginLogoff_Click"/>
         <Frame x:Name="framePrincipal" Content="" Grid.ColumnSpan="14" ScrollViewer.VerticalScrollBarVisibility="Disabled" NavigationUIVisibility="Hidden" Grid.Row="2" Margin="0,2,0,0"/>
-        <Button x:Name="Ingles" Grid.Column="13" Content="en-US" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="12" Width="34" Click="ButtonIngles_Click" FontSize="6"/>
-        <Button x:Name="Espanhol" Grid.Column="13" Content="es-ES" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="12" Width="34" Click="ButtonEspanhol_Click" FontSize="6" Margin="0,15,0,0"/>
-        <Button x:Name="Portugues" Grid.Column="13" Content="pt-BR" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top" Height="12" Width="34" Click="ButtonPortugues_Click" FontSize="6" Margin="0,31,0,0"/>
 
     </Grid>
 </Window>
