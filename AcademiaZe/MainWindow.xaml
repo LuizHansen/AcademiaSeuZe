@@ -6,46 +6,44 @@
         xmlns:local="clr-namespace:AcademiaZe"
         xmlns:resources="clr-namespace:AcademiaZe.Properties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="WindowMain" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="50*"/>
-            <RowDefinition Height="383*"/>
+            <RowDefinition Height="387*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="15*"/>
-            <ColumnDefinition Width="82*"/>
-            <ColumnDefinition Width="52*"/>
-            <ColumnDefinition Width="74*"/>
-            <ColumnDefinition Width="45*"/>
-            <ColumnDefinition Width="71*"/>
-            <ColumnDefinition Width="68*"/>
-            <ColumnDefinition Width="68*"/>
-            <ColumnDefinition Width="45*"/>
-            <ColumnDefinition Width="47*"/>
-            <ColumnDefinition Width="71*"/>
-            <ColumnDefinition Width="49*"/>
-            <ColumnDefinition Width="79*"/>
-            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="55"/>
+            <ColumnDefinition Width="34"/>
+            <ColumnDefinition Width="83"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-
-        <Border BorderBrush="Black" BorderThickness="0" Background="#FFFFCC01" Height="48" VerticalAlignment="Top" Grid.ColumnSpan="14" Grid.RowSpan="2">
-            <Button x:Name="buttonConfig" Content="Config" Margin="766,12,0,12" Click="buttonConfig_Click"/>
-        </Border>
-        <Label Content="FIT CLUB" HorizontalAlignment="Left" Margin="8,19,0,0" Foreground="White" FontFamily="Segoe UI Black" FontSize="10" Grid.Column="1" Width="54" Height="23" VerticalAlignment="Top" Grid.Row="1"/>
-        <Button x:Name="TxtHome" Content="{Binding Path=(resources:Idioma.TxtHome)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="7,12,7,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="2" Click="ButtonHome_Click" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
-        <Button x:Name="TxtLogradouro" Content="{Binding Path=(resources:Idioma.TxtLogradouro)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="10" Click="ButtonLogradouro_Click" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
-        <Button x:Name="TxtAluno" Content="{Binding Path=(resources:Idioma.TxtAluno)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="5,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="4" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonAluno_Click"/>
-        <Button x:Name="TxtColaborador" Content="{Binding Path=(resources:Idioma.TxtColaborador)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="3,12,3,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="3" Grid.Row="1" Click="ButtonColaborador_Click" Height="23" VerticalAlignment="Top"/>
-        <Button x:Name="TxtSenha" Content="{Binding Path=(resources:Idioma.TxtSenha)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,4,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="11" Click="ButtonSenha_Click" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
-        <Button x:Name="TxtMatricula" Content="{Binding Path=(resources:Idioma.TxtMatricula)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,2,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="5" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonMatricula_Click"/>
-        <Button x:Name="TxtAvaliacao" Content="{Binding Path=(resources:Idioma.TxtAvaliacao)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="5,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="7" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonAvaliacao_Click"/>
-        <Button x:Name="TxtFrequencia" Content="{x:Static resources:Idioma.TxtFrequencia}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="5,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="6" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonFrequencia_Click"/>
-        <Button x:Name="TxtAulas" Content="{Binding Path=(resources:Idioma.TxtAulas)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="5,12,6,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="8" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
-        <Button x:Name="TxtTreinos" Content="{Binding Path=(resources:Idioma.TxtTreinos)}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="1,12,5,0" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="9" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
-        <Button x:Name="TxtLoginLogoff" Content="{Binding Path=(resources:Idioma.TxtLoginLogoff)}" FontFamily="Segoe UI Semibold" FontSize="11" Background="#FFFFCC00" Foreground="White" BorderBrush="{x:Null}" Grid.Column="12" Grid.Row="1" Height="23" VerticalAlignment="Top" Margin="0,12,0,0" Click="ButtonLoginLogoff_Click"/>
-        <Frame x:Name="framePrincipal" Content="" Grid.ColumnSpan="14" ScrollViewer.VerticalScrollBarVisibility="Disabled" NavigationUIVisibility="Hidden" Grid.Row="2" Margin="0,2,0,0"/>
+        <Menu Background="#FFFFCC00" Grid.ColumnSpan="13" Margin="0,0,0,0">
+            <MenuItem x:Name="TxtHome" Header="{x:Static resources:Idioma.TxtHome}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="50,12,0,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="ButtonHome_Click" Height="23" Width="auto" VerticalAlignment="Top"/>
+            <MenuItem x:Name="TxtLogradouro" Header="{x:Static resources:Idioma.TxtLogradouro}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,5,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="ButtonLogradouro_Click" Height="23" VerticalAlignment="Top"/>
+            <MenuItem x:Name="TxtAluno" Header="{x:Static resources:Idioma.TxtAluno}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,5,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="4" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonAluno_Click"/>
+            <MenuItem x:Name="TxtColaborador" Header="{x:Static resources:Idioma.TxtColaborador}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,3,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="3" Grid.Row="1" Click="ButtonColaborador_Click" Height="23" VerticalAlignment="Top"/>
+            <MenuItem x:Name="TxtSenha" Header="{x:Static resources:Idioma.TxtSenha}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,4,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="11" Click="ButtonSenha_Click" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
+            <MenuItem x:Name="TxtMatricula" Header="{x:Static resources:Idioma.TxtMatricula}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,2,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="5" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonMatricula_Click"/>
+            <MenuItem x:Name="TxtAvaliacao" Header="{x:Static resources:Idioma.TxtAvaliacao}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,5,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="7" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonAvaliacao_Click"/>
+            <MenuItem x:Name="TxtFrequencia" Header="{x:Static resources:Idioma.TxtFrequencia}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,5,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="6" Grid.Row="1" Height="23" VerticalAlignment="Top" Click="ButtonFrequencia_Click"/>
+            <MenuItem x:Name="TxtAulas" Header="{x:Static resources:Idioma.TxtAulas}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,6,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="8" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
+            <MenuItem x:Name="TxtTreinos" Header="{x:Static resources:Idioma.TxtTreinos}" FontFamily="Segoe UI Semibold" FontSize="11" Margin="0,12,5,0" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="9" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
+            <MenuItem x:Name="TxtLoginLogoff" Header="{x:Static resources:Idioma.TxtLoginLogoff}" FontFamily="Segoe UI Semibold" FontSize="11" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="12" Grid.Row="1" Height="23" VerticalAlignment="Top" Margin="0,12,0,0" Click="ButtonLoginLogoff_Click"/>
+            <MenuItem x:Name="buttonConfig" Header="⚙" Margin="0,15,6,15" Click="buttonConfig_Click" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}"/>
+        </Menu>
+        <Label Content="SEU ZÉ" FontFamily="Segoe UI Black" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="53" Margin="2,6,0,0"/>
+        <Label Content="FIT CLUB" FontFamily="Segoe UI Black" HorizontalAlignment="Left" Height="25" Margin="2,18,0,0" VerticalAlignment="Top" Width="53" Foreground="White" FontSize="10"/>
+        <Frame x:Name="framePrincipal" Content="" ScrollViewer.VerticalScrollBarVisibility="Disabled" NavigationUIVisibility="Hidden" Height="381" VerticalAlignment="Top" Margin="0,0,0,0" Grid.Row="1" Grid.ColumnSpan="13"/>
 
     </Grid>
 </Window>

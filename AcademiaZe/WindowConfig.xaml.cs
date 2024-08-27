@@ -11,28 +11,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace AcademiaZe
 {
     /// <summary>
-    /// Interação lógica para Configuracoes.xam
+    /// Lógica interna para WindowConfig.xaml
     /// </summary>
-    public partial class Configuracoes : Page
+    public partial class WindowConfig : Window
     {
-        public Configuracoes()
+        public WindowConfig()
         {
             InitializeComponent();
             comboBoxIdioma.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
         }
-        private void Idiomas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void TxtSalvar_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
+            //abre o arquivo local como leitura/escrita e salva as alterações em AcademiaDoZe_WPF.dll.config
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             config.AppSettings.Settings.Remove("IdiomaRegiao");
             config.AppSettings.Settings.Add("IdiomaRegiao", comboBoxIdioma.Text);
@@ -40,10 +35,7 @@ namespace AcademiaZe
             ConfigurationManager.RefreshSection("appSettings");
             //atualiza a cultura corrente
             Funcoes.AjustaIdiomaRegiao();
-            var newWindow = new MainWindow();
-            newWindow.Show();
-            _ = MessageBox.Show("Idioma/região alterada com sucesso!");
-
+            Close();
         }
     }
 }
