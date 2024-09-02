@@ -9,6 +9,14 @@ namespace AcademiaZe
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            // mantem o que já acontecia no método original
+            base.OnStartup(e);
+
+            // Define a cultura padrão
+            Funcoes.AjustaIdiomaRegiao();
+        }
     }
 
 }

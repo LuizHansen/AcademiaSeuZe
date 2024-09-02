@@ -250,6 +250,15 @@ namespace AcademiaZe.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a CONFIGURAÇÕES.
+        /// </summary>
+        public static string TxtConfig {
+            get {
+                return ResourceManager.GetString("TxtConfig", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Antebraço dir.
         /// </summary>
         public static string TxtDAntebraco {
@@ -399,6 +408,15 @@ namespace AcademiaZe.Properties {
         public static string TxtIdAluno {
             get {
                 return ResourceManager.GetString("TxtIdAluno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Idioma/Região.
+        /// </summary>
+        public static string TxtIdioma {
+            get {
+                return ResourceManager.GetString("TxtIdioma", resourceCulture);
             }
         }
         

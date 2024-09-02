@@ -180,6 +180,9 @@
   <data name="TxtComplemento" xml:space="preserve">
     <value>Complemento:</value>
   </data>
+  <data name="TxtConfig" xml:space="preserve">
+    <value>CONFIGURAÇÕES</value>
+  </data>
   <data name="TxtDAntebraco" xml:space="preserve">
     <value>Antebraço dir</value>
   </data>
@@ -230,6 +233,9 @@
   </data>
   <data name="TxtIdAluno" xml:space="preserve">
     <value>ID ALUNO</value>
+  </data>
+  <data name="TxtIdioma" xml:space="preserve">
+    <value>Idioma/Região</value>
   </data>
   <data name="TxtInicio" xml:space="preserve">
     <value>Inicio</value>
