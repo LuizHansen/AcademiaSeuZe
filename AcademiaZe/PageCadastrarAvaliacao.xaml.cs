@@ -20,6 +20,9 @@ namespace AcademiaZe
     /// </summary>
     public partial class PageCadastrarAvaliacao : Page
     {
+        /// <summary>
+        /// Inicializa uma nova instância da classe <see cref="PageCadastrarAvaliacao"/>.
+        /// </summary>
         public PageCadastrarAvaliacao()
         {
             InitializeComponent();

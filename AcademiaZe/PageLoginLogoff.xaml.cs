@@ -20,6 +20,9 @@ namespace AcademiaZe
     /// </summary>
     public partial class PageLoginLogoff : Page
     {
+        /// <summary>
+        /// Inicializa uma nova instância da classe <see cref="PageLoginLogoff"/>.
+        /// </summary>
         public PageLoginLogoff()
         {
             InitializeComponent();
