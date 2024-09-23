@@ -23,6 +23,16 @@ namespace AcademiaZe
         public UserControlLogradouro()
         {
             InitializeComponent();
+            textBoxID.Focus();
+        }
+
+        private void Box_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Funcoes.GanhaFoco(sender);
+        }
+        private void Box_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Funcoes.PerdeFoco(sender);
         }
     }
 }

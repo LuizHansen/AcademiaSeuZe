@@ -10,7 +10,7 @@
     <Grid>
         <Canvas HorizontalAlignment="Center" Height="160" VerticalAlignment="Center" Width="580" Background="White">
             <Label x:Name="TxtId" Content="ID:" FontFamily="Segoe UI Semibold" Canvas.Left="23" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="5"/>
-            <TextBox Canvas.Left="23" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="57" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22"/>
+            <TextBox x:Name="textBoxID" TabIndex="15" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="23" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="57" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22"/>
             <Label x:Name="TxtCep" Content="CEP:" FontFamily="Segoe UI Semibold" Canvas.Left="94" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Width="40" Canvas.Top="5">
                 <Label.RenderTransform>
                     <TransformGroup>
@@ -21,17 +21,17 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
-            <TextBox Canvas.Left="94" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="96" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxCEP" TabIndex="16" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="94" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="96" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="TxtLogradouro" Content="{x:Static resources:Idioma.TxtLogradouro}" Foreground="Black" FontFamily="Segoe UI Semibold" Canvas.Left="219" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="5"/>
-            <TextBox Canvas.Left="219" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="347" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxLogradouro" TabIndex="17" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="219" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="347" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="TxtBairro" Content="{x:Static resources:Idioma.TxtBairro}" FontFamily="Segoe UI Semibold" Canvas.Left="23" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="52"/>
-            <TextBox Canvas.Left="23" TextWrapping="Wrap" Text="" Width="167" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="78"/>
+            <TextBox x:Name="textBoxBairro" TabIndex="18" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="23" TextWrapping="Wrap" Text="" Width="167" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="78"/>
             <Label x:Name="TxtCidade" Content="{x:Static resources:Idioma.TxtCidade}" FontFamily="Segoe UI Semibold" Canvas.Left="219" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="52"/>
-            <TextBox Canvas.Left="219" TextWrapping="Wrap" Text="" Width="228" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="78"/>
+            <TextBox x:Name="textBoxCidade" TabIndex="19" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="219" TextWrapping="Wrap" Text="" Width="228" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="78"/>
             <Label x:Name="TxtUF" Content="UF:" FontFamily="Segoe UI Semibold" Canvas.Left="23" Canvas.Top="106" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <ComboBox Canvas.Left="23" Text="" Canvas.Top="132" Width="57" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <ComboBox x:Name="comboBoxUF" TabIndex="20" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="23" Text="" Canvas.Top="132" Width="57" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="TxtPais" Content="{x:Static resources:Idioma.TxtPais}" FontFamily="Segoe UI Semibold" Canvas.Left="94" Canvas.Top="106" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBox Canvas.Left="94" TextWrapping="Wrap" Text="" Canvas.Top="134" Width="353" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxPais" TabIndex="21" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="94" TextWrapping="Wrap" Text="" Canvas.Top="134" Width="353" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
 
     </Grid>

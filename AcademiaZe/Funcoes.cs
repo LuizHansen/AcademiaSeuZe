@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace AcademiaZe
 {
@@ -22,6 +23,56 @@ namespace AcademiaZe
             CultureInfo culture = new(idiomaRegiao!);
             Thread.CurrentThread.CurrentUICulture = culture;
             Thread.CurrentThread.CurrentCulture = culture;
+        }
+        public static void GanhaFoco(object sender)
+        {
+            
+            var cor = System.Windows.Media.Brushes.LightCyan;
+            if (sender is TextBox)
+            {
+                TextBox textBox = (TextBox)sender;
+                textBox.Background = cor;
+            }
+            else if (sender is PasswordBox)
+            {
+                PasswordBox passwordBox = (PasswordBox)sender;
+                passwordBox.Background = cor;
+            }
+            else if (sender is DatePicker)
+            {
+                DatePicker datePicker = (DatePicker)sender;
+                datePicker.Background = cor;
+            }
+            else if (sender is ComboBox)
+            {
+                ComboBox comboBox = (ComboBox)sender;
+                comboBox.Background = cor;
+            }
+
+        }
+        public static void PerdeFoco(object sender)
+        {
+            var cor = System.Windows.Media.Brushes.White;
+            if (sender is TextBox)
+            {
+                TextBox textBox = (TextBox)sender;
+                textBox.Background = cor;
+            }
+            else if (sender is PasswordBox)
+            {
+                PasswordBox passwordBox = (PasswordBox)sender;
+                passwordBox.Background = cor;
+            }
+            else if (sender is DatePicker)
+            {
+                DatePicker datePicker = (DatePicker)sender;
+                datePicker.Background = cor;
+            }
+            else if (sender is ComboBox)
+            {
+                ComboBox comboBox = (ComboBox)sender;
+                comboBox.Background = cor;
+            }
         }
     }
 }

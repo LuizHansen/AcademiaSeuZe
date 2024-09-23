@@ -24,6 +24,7 @@ namespace AcademiaZe
         {
             InitializeComponent();
             comboBoxIdioma.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
+            comboBoxIdioma.Focus();
         }
         private void TxtSalvar_Click(object sender, RoutedEventArgs e)
         {
@@ -36,6 +37,14 @@ namespace AcademiaZe
             //atualiza a cultura corrente
             Funcoes.AjustaIdiomaRegiao();
             Close();
+        }
+        private void Box_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Funcoes.GanhaFoco(sender);
+        }
+        private void Box_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Funcoes.PerdeFoco(sender);
         }
     }
 }

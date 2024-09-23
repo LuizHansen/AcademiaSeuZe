@@ -13,12 +13,12 @@
         <Canvas Height="361" VerticalAlignment="Center" Background="White" HorizontalAlignment="Center" Width="324">
             <Label Content="{x:Static Properties:Idioma.TxtConfig}" FontFamily="Segoe UI Black" Canvas.Left="72" Canvas.Top="24" FontSize="20"/>
             <Label Content="{x:Static Properties:Idioma.TxtIdioma}" FontFamily="Segoe UI" Canvas.Left="48" Canvas.Top="122" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <ComboBox x:Name="comboBoxIdioma" Height="24" Canvas.Left="48" Canvas.Top="156" Width="220" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <ComboBox x:Name="comboBoxIdioma" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Height="24" Canvas.Left="48" Canvas.Top="156" Width="220" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <System:String>es-ES</System:String>
                 <System:String>pt-BR</System:String>
                 <System:String>en-US</System:String>
             </ComboBox>
-            <Button x:Name="TxtSalvar" Content="{x:Static Properties:Idioma.TxtSalvar}" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Height="40" Canvas.Left="103" Canvas.Top="258" Width="119" HorizontalAlignment="Center" VerticalAlignment="Top" Click="TxtSalvar_Click"/>
+            <Button x:Name="TxtSalvar" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Content="{x:Static Properties:Idioma.TxtSalvar}" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Height="40" Canvas.Left="103" Canvas.Top="258" Width="119" HorizontalAlignment="Center" VerticalAlignment="Top" Click="TxtSalvar_Click"/>
         </Canvas>
 
     </Grid>

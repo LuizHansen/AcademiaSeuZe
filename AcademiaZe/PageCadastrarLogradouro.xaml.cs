@@ -26,6 +26,7 @@ namespace AcademiaZe
         public PageCadastrarLogradouro()
         {
             InitializeComponent();
+            UCLogradouro.Focus();
         }
     }
 }
