@@ -5,7 +5,9 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace AcademiaZe
 {
@@ -48,6 +50,11 @@ namespace AcademiaZe
                 ComboBox comboBox = (ComboBox)sender;
                 comboBox.Background = cor;
             }
+            else if (sender is TextBlock)
+            {
+                TextBlock textBlock = (TextBlock)sender;
+                textBlock.Background = cor;
+            }
 
         }
         public static void PerdeFoco(object sender)
@@ -72,6 +79,49 @@ namespace AcademiaZe
             {
                 ComboBox comboBox = (ComboBox)sender;
                 comboBox.Background = cor;
+            }
+            else if (sender is TextBlock)
+            {
+                TextBlock textBlock = (TextBlock)sender;
+                textBlock.Background = cor;
+            }
+        }
+        /// <summary>
+        /// Tratar eventos de teclado, no caso tecla ENTER funcionando com TAB e tecla ESC para fechar
+        /// </summary>
+        /// <param name="sender">Objeto que gerou o evento</param>
+        /// <param name="e">Evento que foi capturado</param>
+        /// <example>No construtor do formulário:
+        /// this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+        ///</example>S
+        public static void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Se a tecla ENTER for pressionada
+            if (e.Key == Key.Enter)
+            {
+                // Move o foco para o próximo controle, como o TAB faria
+                var focusedElement = Keyboard.FocusedElement as UIElement;
+                // Move o foco para o próximo controle na ordem de tabulação
+                focusedElement?.MoveFocus(new TraversalRequest(FocusNavigationDirection.Next));
+                e.Handled = true; // Previne comportamento padrão do ENTER (como som)
+            }
+            // Se a tecla ESC for pressionada
+            else if (e.Key == Key.Escape)
+            {
+                // verifica se é window e fecha
+                if (sender is Window window)
+                {
+                    window.Close();
+                }
+                // carrega uma página inicial
+                else
+                {
+                    if (Application.Current.MainWindow is MainWindow mainWindow)
+                    {
+                        // precisa passar o método para public
+                        mainWindow.ButtonHome_Click(sender, e);
+                    }
+                }
             }
         }
     }

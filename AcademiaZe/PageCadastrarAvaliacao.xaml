@@ -12,52 +12,52 @@
     <Grid>
         <Canvas HorizontalAlignment="Left" Height="118" Margin="12,48,0,0" VerticalAlignment="Top" Width="320" Background="White">
             <Label Content="ID" Width="26" HorizontalAlignment="Center" Canvas.Left="6" VerticalAlignment="Top" Canvas.Top="2"/>
-            <TextBox Width="75" Background="#598C8C8C" Canvas.Left="31" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxID" IsTabStop="False" Width="75" Background="#598C8C8C" Canvas.Left="31" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="TxtIdAluno" Content="{x:Static resources:Idioma.TxtIdAluno}" Width="68" Canvas.Left="107" Canvas.Top="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBox Width="75" Background="#598C8C8C" Canvas.Left="179" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxIDAluno" IsTabStop="False" Width="75" Background="#598C8C8C" Canvas.Left="179" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label Content="CPF" Width="34" Canvas.Top="35" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox Width="153" Canvas.Left="31" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox KeyDown="Box_KeyDown" x:Name="textBoxCPF" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="153" Canvas.Left="31" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Label x:Name="TxtNome" Content="{x:Static resources:Idioma.TxtNome}" Width="82" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBox Width="303" Canvas.Left="7" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top" Height="15"/>
+            <TextBox KeyDown="Box_KeyDown" x:Name="textBoxNome" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="303" Canvas.Left="7" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top" Height="15"/>
         </Canvas>
         <Label x:Name="TxtCadAvaliacao" Content="{x:Static resources:Idioma.TxtCadAvaliacao}" FontFamily="Segoe IU Black" HorizontalAlignment="Left" Margin="9,8,0,0" VerticalAlignment="Top"/>
         <Border BorderBrush="#FFFFCC01" Background="White" Padding="10" Width="517" HorizontalAlignment="Left" VerticalAlignment="Top" Height="195" Margin="12,171,0,0">
             <StackPanel>
-                <DatePicker HorizontalAlignment="Left"/>
+                <DatePicker KeyDown="Box_KeyDown" x:Name="datePickerData" TabIndex="2" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" HorizontalAlignment="Left"/>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <Label x:Name="TxtPeso" Content="{x:Static resources:Idioma.TxtPeso}" Width="58" VerticalAlignment="Center"/>
-                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textboxPeso" TabIndex="3" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
                     <Label x:Name="TxtAltura" Content="{x:Static resources:Idioma.TxtAltura}" Width="65"/>
-                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxAltura" TabIndex="4" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <Label x:Name="TxtTorax" Content="{x:Static resources:Idioma.TxtTorax}" Width="44" VerticalAlignment="Center"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxTorax" TabIndex="5" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="33"/>
                     <Label x:Name="TxtCintura" Content="{x:Static resources:Idioma.TxtCintura}" Width="50"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxCintura" TabIndex="6" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="33"/>
                     <Label x:Name="TxtQuadril" Content="{x:Static resources:Idioma.TxtQuadril}" Width="49"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxQuadril" TabIndex="7" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="33"/>
                     <Label x:Name="TxtDAntebraco" Content="{x:Static resources:Idioma.TxtDAntebraco}" Width="86"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxAntDir" TabIndex="8" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="33"/>
                     <Label x:Name="TxtEAntebraco" Content="{x:Static resources:Idioma.TxtEAntebraco}" Width="86"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxAntEsq" TabIndex="9" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="33"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <Label x:Name="TxtDBiceps" Content="{x:Static resources:Idioma.TxtDBiceps}" Width="60" VerticalAlignment="Center"/>
-                    <TextBox Width="34"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxBicepDir" TabIndex="10" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="34"/>
                     <Label x:Name="TxtEBiceps" Content="{x:Static resources:Idioma.TxtEBiceps}" Width="68"/>
-                    <TextBox Width="34"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxBicepEsq" Width="34" TabIndex="11" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus"/>
                     <Label x:Name="TxtDCoxa" Content="{x:Static resources:Idioma.TxtDCoxa}" Width="53"/>
-                    <TextBox Width="34"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxCoxaDir" Width="34" TabIndex="12" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus"/>
                     <Label x:Name="TxtECoxa" Content="{x:Static resources:Idioma.TxtECoxa}" Width="58"/>
-                    <TextBox Width="34"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxCoxaEsq" Width="34" TabIndex="13" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <Label x:Name="TxtDPanturrilha" Content="{x:Static resources:Idioma.TxtDPanturrilha}" Width="85" VerticalAlignment="Center"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxPantuDir" Width="33" TabIndex="14" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus"/>
                     <Label x:Name="TxtEPanturrilha" Content="{x:Static resources:Idioma.TxtEPanturrilha}" Width="90"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxPantuEsq" Width="33" TabIndex="15" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
                 <StackPanel Orientation="Horizontal"  Margin="0,10,0,0"/>
@@ -68,17 +68,17 @@
             <StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <Label x:Name="TxtMassaMagra" Content="{x:Static resources:Idioma.TxtMassaMagra}" Width="82" VerticalAlignment="Center"/>
-                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxMMagra" TabIndex="16" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
                     <Label x:Name="TxtMassaGorda" Content="{x:Static resources:Idioma.TxtMassaGorda}" Width="81"/>
-                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxMGorda" TabIndex="17" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
                     <Label x:Name="TxtGordura" Content="{x:Static resources:Idioma.TxtGordura}" Width="69"/>
-                    <TextBox Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxGordura" TabIndex="18" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="39" Background="{x:Null}" BorderThickness="1,1,1,1"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <Label x:Name="TxtPesoIdeal" Content="{x:Static resources:Idioma.TxtPesoIdeal}" Width="65" VerticalAlignment="Center"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxPesoIdeal" TabIndex="19" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="33"/>
                     <Label x:Name="TxtImc" Content="IMC" Width="36"/>
-                    <TextBox Width="33"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxIMC" TabIndex="20" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="33"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
@@ -88,8 +88,8 @@
         </Border>
         <Canvas HorizontalAlignment="Left" Height="215" Margin="542,166,0,0" VerticalAlignment="Top" Width="258">
             <Label x:Name="TxtObservacoes" Content="{x:Static resources:Idioma.TxtObservacoes}" HorizontalAlignment="Center" Canvas.Top="-4" VerticalAlignment="Top"></Label>
-            <TextBlock Height="114" Background="Gainsboro" Canvas.Left="8" TextWrapping="Wrap" Canvas.Top="22" Width="238" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Button x:Name="TxtSalvar" Content="{x:Static resources:Idioma.TxtSalvar}" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Height="40" Canvas.Left="127" Canvas.Top="157" Width="118" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox KeyDown="Box_KeyDown" x:Name="textBoxOBS" TabIndex="21" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Height="114" Background="Gainsboro" Canvas.Left="8" TextWrapping="Wrap" Canvas.Top="22" Width="238" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button KeyDown="Box_KeyDown" x:Name="TxtSalvar" TabIndex="22" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Content="{x:Static resources:Idioma.TxtSalvar}" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Height="40" Canvas.Left="127" Canvas.Top="157" Width="118" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         </Canvas>
 
     </Grid>

@@ -37,6 +37,9 @@ namespace AcademiaZe
         {
             Funcoes.PerdeFoco(sender);
         }
-
+        private void Box_KeyDown(object sender, KeyEventArgs e)
+        {
+            Funcoes.Window_KeyDown(sender, e);
+        }
     }
 }

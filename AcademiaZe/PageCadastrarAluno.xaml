@@ -36,7 +36,7 @@
         <!-- Personal Information Section -->
         <Label x:Name="TxtCadAluno" Content="{x:Static resources:Idioma.TxtCadAluno}" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="16" Foreground="#333" Margin="10,4,98,24" Grid.ColumnSpan="4" Grid.RowSpan="3"/>
         <Label Content="ID:" FontFamily="Segoe UI Semibold" Margin="14,0,38,1" Grid.Column="1" Grid.Row="2"/>
-        <TextBox x:Name="textBoxID" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="14,2,6,0" Grid.Column="1" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
+        <TextBox KeyDown="Box_KeyDown" x:Name="textBoxID" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="14,2,6,0" Grid.Column="1" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
         <Label Content="CPF:" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.5,0.5" Margin="8,0,87,1" Grid.Column="2" Grid.Row="2">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -47,18 +47,18 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="textBoxCPF" TextWrapping="Wrap" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Text="" Margin="8,2,7,0" Grid.Column="2" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
+        <TextBox KeyDown="Box_KeyDown" x:Name="textBoxCPF" TextWrapping="Wrap" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Text="" Margin="8,2,7,0" Grid.Column="2" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
         <Label x:Name="TxtTelefone" Content="{x:Static resources:Idioma.TxtTelefone}" Foreground="Black" FontFamily="Segoe UI Semibold" Margin="8,0,46,1" Grid.Column="3" Grid.Row="2"/>
-        <TextBox x:Name="textBoxTelefone" TextWrapping="Wrap" TabIndex="2" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Text="" Margin="8,2,10,0" Grid.Column="3" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
+        <TextBox KeyDown="Box_KeyDown" x:Name="textBoxTelefone" TextWrapping="Wrap" TabIndex="2" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Text="" Margin="8,2,10,0" Grid.Column="3" Grid.Row="3" Height="21" VerticalAlignment="Top"/>
         <Label x:Name="TxtNascimento" Content="{x:Static resources:Idioma.TxtNasciemnto}" FontFamily="Segoe UI Semibold" Margin="10,0,0,1" HorizontalAlignment="Left" Width="80" Grid.Column="4" Grid.Row="2"/>
-        <TextBox x:Name="textBoxNome" TabIndex="4" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="14,3,0,0" HorizontalAlignment="Left" Width="316" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="5" Height="19" VerticalAlignment="Top"/>
+        <TextBox KeyDown="Box_KeyDown" x:Name="textBoxNome" TabIndex="4" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="14,3,0,0" HorizontalAlignment="Left" Width="316" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="5" Height="19" VerticalAlignment="Top"/>
         <Label Content="Email:" FontFamily="Segoe UI Semibold" Margin="8,0,109,0" Grid.Column="4" Grid.Row="4" Height="23" VerticalAlignment="Center"/>
-        <TextBox x:Name="textBoxEmail" TabIndex="5" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="0,3,0,0" HorizontalAlignment="Left" Width="228" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="5" Height="19" VerticalAlignment="Top"/>
-        <DatePicker x:Name="DatePickerNascimento" TabIndex="3" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Margin="10,2,0,0" HorizontalAlignment="Left" Width="142" Grid.Column="4" Grid.Row="3" Height="23" VerticalAlignment="Top"/>
+        <TextBox KeyDown="Box_KeyDown" x:Name="textBoxEmail" TabIndex="5" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="0,3,0,0" HorizontalAlignment="Left" Width="228" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="5" Height="19" VerticalAlignment="Top"/>
+        <DatePicker KeyDown="Box_KeyDown" x:Name="DatePickerNascimento" TabIndex="3" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Margin="10,2,0,0" HorizontalAlignment="Left" Width="142" Grid.Column="4" Grid.Row="3" Height="23" VerticalAlignment="Top"/>
         <Label x:Name="TxtNome" Content="{x:Static resources:Idioma.TxtNome}" FontFamily="Segoe UI Semibold" Margin="14,0,12,0" Grid.Column="1" Grid.Row="4" Height="27" VerticalAlignment="Center"/>
         <local:UserControlLogradouro TabIndex="6" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="6" Grid.Row="6"/>
         <Label x:Name="TxtNumero" Content="{x:Static resources:Idioma.TxtNumero}" FontFamily="Segoe UI Semibold" Margin="10,0,10,0" Grid.Column="1" Grid.Row="6" Grid.RowSpan="2" Height="23" VerticalAlignment="Bottom"/>
-        <TextBox x:Name="textBoxNumero" TabIndex="7" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="15,3,0,0" HorizontalAlignment="Left" Width="56" Grid.Column="1" Grid.Row="8" Height="21" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNumero" KeyDown="Box_KeyDown" TabIndex="7" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="15,3,0,0" HorizontalAlignment="Left" Width="56" Grid.Column="1" Grid.Row="8" Height="21" VerticalAlignment="Top"/>
         <Label x:Name="TxtComplemento" Content="{x:Static resources:Idioma.TxtComplemento}" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.5,0.5" Margin="16,0,27,0" Grid.Column="2" Grid.Row="6" Grid.RowSpan="2" Height="23" VerticalAlignment="Bottom">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -69,8 +69,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="textBoxComplemento" TabIndex="8" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="12,3,0,0" HorizontalAlignment="Left" Width="350" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="8" Height="21" VerticalAlignment="Top"/>
-        <Button x:Name="TxtSalvar" TabIndex="9" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Content="{x:Static resources:Idioma.TxtSalvar}" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Margin="1,5,6,2" Grid.Column="7" Grid.Row="7" Grid.RowSpan="2"/>
+        <TextBox KeyDown="Box_KeyDown" x:Name="textBoxComplemento" TabIndex="8" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Text="" Margin="12,3,0,0" HorizontalAlignment="Left" Width="350" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="8" Height="21" VerticalAlignment="Top"/>
+        <Button KeyDown="Box_KeyDown" x:Name="TxtSalvar" TabIndex="9" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Content="{x:Static resources:Idioma.TxtSalvar}" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White" Margin="1,5,6,2" Grid.Column="7" Grid.Row="7" Grid.RowSpan="2"/>
 
     </Grid>
 </Page>

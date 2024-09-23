@@ -28,5 +28,9 @@ namespace AcademiaZe
             InitializeComponent();
             UCLogradouro.Focus();
         }
+        private void Box_KeyDown(object sender, KeyEventArgs e)
+        {
+            Funcoes.Window_KeyDown(sender, e);
+        }
     }
 }

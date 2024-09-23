@@ -15,24 +15,24 @@
                 <Label x:Name="TxtCadFrequencia" Content="{x:Static resources:Idioma.TxtCadFrequencia}" FontWeight="Bold" FontSize="16" Foreground="#333" HorizontalAlignment="Center"/>
                 <StackPanel Margin="0,10,0,0">
                     <Label Content="ID" Width="26" VerticalAlignment="Center"/>
-                    <TextBox Width="75" Background="#598C8C8C"/>
+                    <TextBox IsTabStop="False" x:Name="textBoxID" Width="75" Background="#598C8C8C"/>
                     <Label x:Name="TxtIdAluno" Content="{x:Static resources:Idioma.TxtIdAluno}" HorizontalAlignment="Center"/>
-                    <TextBox Width="75" Background="#598C8C8C"/>
+                    <TextBox x:Name="textBoxIDAluno" IsTabStop="False" Width="75"  Background="#598C8C8C"/>
                     <Label Content="CPF" Width="34"/>
-                    <TextBox Width="153"/>
+                    <TextBox KeyDown="Box_KeyDown" x:Name="textBoxCPF" Width="153" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
                 <StackPanel>
                     <Label x:Name="TxtEntrada" Content="{x:Static resources:Idioma.TxtEntrada}" Width="62" HorizontalAlignment="Center"/>
-                    <DatePicker Width="200" HorizontalAlignment="Center"/>
+                    <DatePicker KeyDown="Box_KeyDown" x:Name="datePickerEntrada" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Width="200" HorizontalAlignment="Center"/>
                 </StackPanel>
                 <StackPanel Margin="0,10,0,0">
                     <Label x:Name="TxtSaida" Content="{x:Static resources:Idioma.TxtSaida}" Width="45"/>
-                    <DatePicker Width="200"/>
+                    <DatePicker x:Name="datePickerSaida" KeyDown="Box_KeyDown" Width="200" TabIndex="2" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
-                <Button x:Name="TxtSalvar" Content="{x:Static resources:Idioma.TxtSalvar}" Height="40" Width="118" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White"/>
+                <Button x:Name="TxtSalvar" KeyDown="Box_KeyDown" TabIndex="3" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Content="{x:Static resources:Idioma.TxtSalvar}" Height="40" Width="118" BorderBrush="{x:Null}" Background="#FFFFCC01" Foreground="White"/>
                 <StackPanel Orientation="Horizontal"  Margin="0,10,0,0"/>
             </StackPanel>
         </Border>

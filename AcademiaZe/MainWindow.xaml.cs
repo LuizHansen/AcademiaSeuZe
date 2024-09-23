@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,15 +28,18 @@ namespace AcademiaZe
         public MainWindow()
         {
             InitializeComponent();
+           
+
         }
-        private void ButtonHome_Click(object sender, RoutedEventArgs e)
+        public void ButtonHome_Click(object sender, RoutedEventArgs e)
         {
             if (framePrincipal.Content is not null)
             {
                 framePrincipal.Content = null;
             }
-        }
-        private void ButtonColaborador_Click(object sender, RoutedEventArgs e)
+        }  
+   
+    private void ButtonColaborador_Click(object sender, RoutedEventArgs e)
         {
             if (framePrincipal.Content is not PageCadastrarColaborador)
             {

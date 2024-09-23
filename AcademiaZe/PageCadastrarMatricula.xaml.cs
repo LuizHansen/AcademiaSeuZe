@@ -26,11 +26,19 @@ namespace AcademiaZe
         public PageCadastrarMatricula()
         {
             InitializeComponent();
+            textBoxCPF.Focus();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Box_GotFocus(object sender, RoutedEventArgs e)
         {
-
+            Funcoes.GanhaFoco(sender);
+        }
+        private void Box_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Funcoes.PerdeFoco(sender);
+        }
+        private void Box_KeyDown(object sender, KeyEventArgs e)
+        {
+            Funcoes.Window_KeyDown(sender, e);
         }
     }
 }

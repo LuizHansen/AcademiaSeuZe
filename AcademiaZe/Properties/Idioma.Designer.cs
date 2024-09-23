@@ -61,6 +61,15 @@ namespace AcademiaZe.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Deseja realmente fechar a aplicação?.
+        /// </summary>
+        public static string CloseConfirmation {
+            get {
+                return ResourceManager.GetString("CloseConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Administrador.
         /// </summary>
         public static string TxtAdministrador {
