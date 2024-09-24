@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using Xceed.Wpf.Toolkit;
 
 namespace AcademiaZe
 {
@@ -40,20 +41,15 @@ namespace AcademiaZe
                 PasswordBox passwordBox = (PasswordBox)sender;
                 passwordBox.Background = cor;
             }
-            else if (sender is DatePicker)
+            else if (sender is MaskedTextBox)
             {
-                DatePicker datePicker = (DatePicker)sender;
-                datePicker.Background = cor;
+                MaskedTextBox maskedTextBox= (MaskedTextBox)sender;
+                maskedTextBox.Background = cor;
             }
             else if (sender is ComboBox)
             {
                 ComboBox comboBox = (ComboBox)sender;
                 comboBox.Background = cor;
-            }
-            else if (sender is TextBlock)
-            {
-                TextBlock textBlock = (TextBlock)sender;
-                textBlock.Background = cor;
             }
 
         }
@@ -70,21 +66,17 @@ namespace AcademiaZe
                 PasswordBox passwordBox = (PasswordBox)sender;
                 passwordBox.Background = cor;
             }
-            else if (sender is DatePicker)
+            else if (sender is MaskedTextBox)
             {
-                DatePicker datePicker = (DatePicker)sender;
-                datePicker.Background = cor;
+                MaskedTextBox maskedTextBox = (MaskedTextBox)sender;
+                maskedTextBox.Background = cor;
             }
             else if (sender is ComboBox)
             {
                 ComboBox comboBox = (ComboBox)sender;
                 comboBox.Background = cor;
             }
-            else if (sender is TextBlock)
-            {
-                TextBlock textBlock = (TextBlock)sender;
-                textBlock.Background = cor;
-            }
+            
         }
         /// <summary>
         /// Tratar eventos de teclado, no caso tecla ENTER funcionando com TAB e tecla ESC para fechar

@@ -28,8 +28,19 @@ namespace AcademiaZe
         public MainWindow()
         {
             InitializeComponent();
-           
+         this.Closing += MainWindow_Closing;
+        }
 
+        private void MainWindow_Closing(object sender, CancelEventArgs e)
+        {
+                // Exemplo: Confirmar se o usuário realmente deseja fechar a janela
+                MessageBoxResult result = MessageBox.Show("Deseja realmente fechar a aplicação?", "Confirmação", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            
+            if (result == MessageBoxResult.No)
+            {
+                // Cancela o fechamento da janela
+                e.Cancel = true;
+            }
         }
         public void ButtonHome_Click(object sender, RoutedEventArgs e)
         {

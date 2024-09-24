@@ -2,6 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AcademiaZe"
              xmlns:resources="clr-namespace:AcademiaZe.Properties"
@@ -21,7 +22,7 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
-            <TextBox x:Name="textBoxCEP" KeyDown="Box_KeyDown" TabIndex="16" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="94" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="96" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <xctk:MaskedTextBox Mask="00.000-000" x:Name="textBoxCEP" KeyDown="Box_KeyDown" TabIndex="16" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="94" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="96" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="TxtLogradouro" Content="{x:Static resources:Idioma.TxtLogradouro}" Foreground="Black" FontFamily="Segoe UI Semibold" Canvas.Left="219" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="5"/>
             <TextBox x:Name="textBoxLogradouro" TabIndex="17" KeyDown="Box_KeyDown" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="219" TextWrapping="Wrap" Text="" Canvas.Top="31" Width="347" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="TxtBairro" Content="{x:Static resources:Idioma.TxtBairro}" FontFamily="Segoe UI Semibold" Canvas.Left="23" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="52"/>
