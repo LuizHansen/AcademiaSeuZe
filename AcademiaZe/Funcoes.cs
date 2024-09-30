@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.Common;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -114,6 +115,35 @@ namespace AcademiaZe
                         mainWindow.ButtonHome_Click(sender, e);
                     }
                 }
+            }
+        }
+        public static void ValidaConexaoDB()
+        {
+            DbProviderFactory factory;
+            string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            string connectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+            try
+            {
+                factory = DbProviderFactories.GetFactory(provider);
+                using var conexao = factory.CreateConnection();
+                conexao!.ConnectionString = connectionString;
+                using var comando = factory.CreateCommand();
+                comando!.Connection = conexao;
+                conexao.Open();
+            }
+            catch (DbException ex)
+            {
+                System.Windows.MessageBox.Show($"{ex.Source}\n\n{ex.Message}\n\n{ex.ErrorCode}\n\n{ex.SqlState}\n\n{ex.StackTrace}");
+                var auxConfig = new WindowConfig(provider);
+                auxConfig.ShowDialog();
+                ValidaConexaoDB();
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"{ex.Source}\n\n{ex.Message}\n\n{ex.StackTrace}");
+                var auxConfig = new WindowConfig(provider);
+                auxConfig.ShowDialog();
+                ValidaConexaoDB();
             }
         }
     }

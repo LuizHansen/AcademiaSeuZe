@@ -1,6 +1,8 @@
-﻿using System;
+﻿using MySqlX.XDevAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Globalization;
 using System.Linq;
 using System.Resources;
@@ -22,13 +24,19 @@ namespace AcademiaZe
     /// </summary>
     public partial class MainWindow: Window
     {
+        public string ConnectionString { get; set; }
+        public string ProviderName { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="MainWindow"/> class.
         /// </summary>
         public MainWindow()
         {
             InitializeComponent();
-         this.Closing += MainWindow_Closing;
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            Funcoes.ValidaConexaoDB();
+            ProviderName = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            ConnectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+            this.Closing += MainWindow_Closing;
         }
 
         private void MainWindow_Closing(object sender, CancelEventArgs e)
@@ -111,7 +119,7 @@ namespace AcademiaZe
 
         private void buttonConfig_Click(object sender, RoutedEventArgs e)
         {
-            WindowConfig windowConfig = new WindowConfig();
+            WindowConfig windowConfig = new WindowConfig(ProviderName);
             windowConfig.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             windowConfig.ShowDialog();
 

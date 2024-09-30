@@ -20,7 +20,7 @@ namespace AcademiaZe
     /// </summary>
     public partial class WindowConfig : Window
     {
-        public WindowConfig()
+        public WindowConfig(string provider)
         {
             InitializeComponent();
             comboBoxIdioma.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
