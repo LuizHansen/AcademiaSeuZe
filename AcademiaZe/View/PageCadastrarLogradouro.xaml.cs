@@ -18,8 +18,11 @@ namespace AcademiaZe
     /// <summary>
     /// Interação lógica para PageCadastrarLogradouro.xam
     /// </summary>
+    /// 
     public partial class PageCadastrarLogradouro : Page
     {
+        private string ConnectionString { get; set; }
+        private string ProviderName { get; set; }
         /// <summary>
         /// Inicializa uma nova instância da classe <see cref="PageCadastrarLogradouro"/>.
         /// </summary>
@@ -32,5 +35,6 @@ namespace AcademiaZe
         {
             Funcoes.Window_KeyDown(sender, e);
         }
+
     }
 }
