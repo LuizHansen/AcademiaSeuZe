@@ -1,4 +1,5 @@
 ﻿using AcademiaZe.ViewModel;
+using AcademiaZe.View;
 using System;
 using System.Collections.Generic;
 using System.Configuration.Provider;

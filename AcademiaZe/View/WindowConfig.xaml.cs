@@ -28,7 +28,7 @@ namespace AcademiaZe
         }
         private void TxtSalvar_Click(object sender, RoutedEventArgs e)
         {
-            //abre o arquivo local como leitura/escrita e salva as alterações em AcademiaDoZe_WPF.dll.config
+            //abre o arquivo local como leitura/escrita e salva as alterações em AcademiaZe.dll.config
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             config.AppSettings.Settings.Remove("IdiomaRegiao");
             config.AppSettings.Settings.Add("IdiomaRegiao", comboBoxIdioma.Text);

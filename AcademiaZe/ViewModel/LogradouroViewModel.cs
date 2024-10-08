@@ -27,12 +27,22 @@ public class LogradouroViewModel : ViewModelBase
         }
     }
     private LogradouroRepository _repository;
+    private string providerName;
+    private string connectionString;
+
     public LogradouroViewModel()
     {
         Logradouros = new ObservableCollection<Logradouro>();
         _repository = new LogradouroRepository();
         GetAll();
     }
+
+    public LogradouroViewModel(string providerName, string connectionString)
+    {
+        this.providerName = providerName;
+        this.connectionString = connectionString;
+    }
+
     public void GetAll()
     {
         // busca no banco de dados e carrega em Logradouros

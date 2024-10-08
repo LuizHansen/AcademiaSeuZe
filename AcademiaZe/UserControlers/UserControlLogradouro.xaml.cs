@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AcademiaZe
+namespace AcademiaZe.UserControlers
 {
     /// <summary>
     /// Interação lógica para UserControlLogradouro.xam
