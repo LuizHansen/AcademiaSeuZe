@@ -21,15 +21,18 @@ namespace AcademiaZe
     /// 
     public partial class PageCadastrarLogradouro : Page
     {
-        private string ConnectionString { get; set; }
-        private string ProviderName { get; set; }
+        private string _connectionString { get; set; }
+        private string _providerName { get; set; }
         /// <summary>
         /// Inicializa uma nova instância da classe <see cref="PageCadastrarLogradouro"/>.
         /// </summary>
-        public PageCadastrarLogradouro()
+        public PageCadastrarLogradouro(string providerName, string connectionString)
         {
             InitializeComponent();
             UCLogradouro.Focus();
+            _connectionString = connectionString;
+            _providerName = providerName;
+
         }
         private void Box_KeyDown(object sender, KeyEventArgs e)
         {

@@ -1,4 +1,5 @@
-﻿using MySqlX.XDevAPI;
+﻿using AcademiaZe.View;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -96,9 +97,9 @@ namespace AcademiaZe
 
         private void ButtonLogradouro_Click(object sender, RoutedEventArgs e)
         {
-            if (framePrincipal.Content is not PageCadastrarLogradouro)
+            if (framePrincipal.Content is not PageListaLogradouro)
             {
-                framePrincipal.Content = new PageCadastrarLogradouro();
+                framePrincipal.Content = new PageListaLogradouro(this.ProviderName, this.ConnectionString);
             }
         }
         private void ButtonSenha_Click(object sender, RoutedEventArgs e)
