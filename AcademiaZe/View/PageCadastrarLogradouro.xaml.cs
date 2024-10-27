@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AcademiaZe
+namespace AcademiaZe.View
 {
     /// <summary>
     /// Interação lógica para PageCadastrarLogradouro.xam
@@ -29,15 +29,23 @@ namespace AcademiaZe
         public PageCadastrarLogradouro(string providerName, string connectionString)
         {
             InitializeComponent();
-            UCLogradouro.Focus();
+            this.Loaded += PageCadastrarLogradouro_Loaded;
             _connectionString = connectionString;
             _providerName = providerName;
-
         }
+
+        private void PageCadastrarLogradouro_Loaded(object sender, RoutedEventArgs e)
+        {
+            var UCLogradouro = this.FindName("UCLogradouro") as UIElement;
+            if (UCLogradouro != null)
+            {
+                UCLogradouro.Focus();
+            }
+        }
+
         private void Box_KeyDown(object sender, KeyEventArgs e)
         {
             Funcoes.Window_KeyDown(sender, e);
         }
-
     }
 }
